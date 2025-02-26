@@ -1,0 +1,120 @@
+/* General Container Styling */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f2f2f2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Address List */
+.address-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Add Address Box */
+.add-address {
+    width: 300px;
+    height: 140px;
+    background: #f9f9f9;
+    border: 2px dashed #007bff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-address:hover {
+    background: rgba(0, 123, 255, 0.1);
+}
+
+.add-icon {
+    font-size: 35px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Address Card */
+.address-card {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.address-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Default Address Label */
+.default-label {
+    background: #007bff;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+/* Address Text */
+.address-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.address-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Actions (Edit & Remove) */
+.actions {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0 8px;
+    transition: color 0.3s ease-in-out;
+}
+
+.actions a:hover {
+    color: #0041a3;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .address-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-address,
+    .address-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}

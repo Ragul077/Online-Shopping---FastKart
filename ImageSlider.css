@@ -1,0 +1,68 @@
+.slider-container {
+    top:50px;
+    left:100px;
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .slider-image {
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+  }
+  
+  .arrow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .arrow.left {
+    left: 50px;
+  }
+  
+  .arrow.right {
+    right: 50px;
+  }
+  
+  .arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .big{
+    margin-top: 80%;
+  }
+  .image-slider {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 700px; 
+    gap: 50px;
+    margin-left: 350px;
+  }
+  
+  .medicallog {
+    width: 550px;
+    height: 600px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+  }
+.image-slider .img1{
+  left: 30px;
+}
+  
+  

@@ -1,0 +1,84 @@
+.best {
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.best h1 {
+    font-size: 32px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #0a3d62;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 65, 108, 0.2);
+}
+
+.best-seller-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.sell {
+    width: 230px;
+    height: 340px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.sell:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.sell img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sell:hover img {
+    transform: scale(1.08);
+}
+
+.sell .cont {
+    padding: 12px;
+    text-align: center;
+    background: #0a3d62;
+    border-radius: 0 0 15px 15px;
+}
+
+.sell h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.sell:hover .cont {
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .best-seller-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sell {
+        width: 80%;
+        max-width: 300px;
+    }
+}
